@@ -9,6 +9,7 @@ export const GifExpertApp = () => {
         setCategories([ ...categories, 'Game of Thrones'])
     }
 
+    
     return(
         <>
             {/* Titulo */}
