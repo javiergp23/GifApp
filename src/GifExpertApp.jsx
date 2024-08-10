@@ -8,8 +8,7 @@ export const GifExpertApp = () => {
     const onAddCategory = () => {
         setCategories([ ...categories, 'Game of Thrones'])
     }
-
-    
+ 
     return(
         <>
             {/* Titulo */}
@@ -17,7 +16,6 @@ export const GifExpertApp = () => {
             {/* Input */}
             <AddCategory setCategories={ setCategories }/>
             {/* Listado de Gif */}
-       
             <ol>
                 {
                 categories.map(category => {
