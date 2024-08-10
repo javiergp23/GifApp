@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-
 export const AddCategory = ({ setCategories }) => {
     const [inputValeu, setInputValue] = useState('Datos');
     const onInputChange = ({ target }) => {
@@ -14,9 +13,7 @@ export const AddCategory = ({ setCategories }) => {
         setInputValue('');
     }
 
-    
   return (
-    
     <form onSubmit={ (event) => onSubmit(event)  }>
         <input 
             type="text" 
@@ -25,6 +22,5 @@ export const AddCategory = ({ setCategories }) => {
             onChange={ onInputChange}
         />
     </form>
-
   )
 }
