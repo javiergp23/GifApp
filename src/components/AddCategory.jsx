@@ -12,13 +12,16 @@ export const AddCategory = ({ setCategories }) => {
         setInputValue('');
     }
   return (
-    <form onSubmit={ (event) => onSubmit(event)  }>
+    <form onSubmit={ (event) => onSubmit(event) }>
+
         <input 
             type="text" 
-            placeholder="Buscar Gifs"
+            placeholder="Buscar todos los Gifs"
             value={inputValeu}    
+            
             onChange={ onInputChange}
         />
+
     </form>
   )
 }
