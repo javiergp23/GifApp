@@ -10,7 +10,6 @@ export const GifExpertApp = () => {
     }
  
     return(
-        // agregar un fragmen 
         <>
             {/* Titulo */}
             <h1>Gif Expert App</h1>
