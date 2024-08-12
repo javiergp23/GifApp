@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export const AddCategory = ({ setCategories }) => {
-    const [inputValeu, setInputValue] = useState('Datos');
+    const [inputValeu, setInputValue] = useState('');
     const onInputChange = ({ target }) => {
         setInputValue(target.value);
     }
@@ -16,9 +16,8 @@ export const AddCategory = ({ setCategories }) => {
 
         <input 
             type="text" 
-            placeholder="Buscar todos los Gifs"
+            placeholder="Buscar Gifs"
             value={inputValeu}    
-            
             onChange={ onInputChange}
         />
 
