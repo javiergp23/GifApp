@@ -13,6 +13,7 @@ export const GifExpertApp = () => {
         // categories.push(newCategory);
         setCategories([ newCategory, ...categories ])
     }
+    
     return(
         <>
             
