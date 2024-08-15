@@ -28,6 +28,7 @@
     margin-bottom: 5px;
   }
   
+  /* Card styles */
   .card-grid {
     display: flex;
     flex-direction: row;
