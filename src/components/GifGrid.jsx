@@ -1,4 +1,4 @@
-
+// agregand cada componente gifGrid
 export const GifGrid = ({ category }) => {
     
     const getGifs = async() => {
