@@ -8,6 +8,7 @@ export const GifGrid = ({ category }) => {
         console.log(resp);
     }
 
+    
     getGifs();
 
     return(
