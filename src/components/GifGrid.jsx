@@ -8,13 +8,12 @@ export const GifGrid = ({ category }) => {
         console.log(resp);
     }
 
-    
     getGifs();
 
     return(
         <>
             <h3>{category}</h3>
-           
+            <p>Hola mundo</p>
         </>
     )
 }

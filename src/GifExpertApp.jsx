@@ -23,15 +23,18 @@ export const GifExpertApp = () => {
             onNewCategory={ (value) => onAddCategory(value) }
         />
 
-        <ol>
-            {
-            categories.map(category => {
-                (
-                    <GifGrid key={ category} category={ category }/>
-                )
-            })
-            }
-        </ol>
+        
+        {
+        categories.map(category => {
+            (
+                <GifGrid 
+                    key={ category} 
+                    category={ category }
+                />
+            )
+        })
+        }
+        
 
         </>
     )
