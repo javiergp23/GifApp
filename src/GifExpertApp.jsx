@@ -13,10 +13,8 @@ export const GifExpertApp = () => {
         // categories.push(newCategory);
         setCategories([ newCategory, ...categories ])
     }
-    
     return(
         <>
-           
         <h1>Gif Expert App</h1>
         <AddCategory 
 
@@ -33,8 +31,6 @@ export const GifExpertApp = () => {
             )
         )
         }
-        
-
         </>
     )
 }
