@@ -1,11 +1,14 @@
 import { getGifs } from "../helpers/getGifts";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 // agregand cada componente gifGrid
 export const GifGrid = ({ category }) => {
     
     const [counter, setCounter] = useState(10);
+    useEffect(() => {
 
-    getGifs(category);
+        getGifs(category);
+    }, []);
+
 
     return(
         <>
