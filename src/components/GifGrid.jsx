@@ -1,19 +1,11 @@
 import { getGifs } from "../helpers/getGifts";
 import { useState, useEffect } from 'react'
 import { GifItem } from "./GifItem";
+import { useFetchGifs } from "../hooks/useFetchGifs";
 // agregand cada componente gifGrid
 export const GifGrid = ({ category }) => {
-    
-    const [images, setImages] = useState([]);  
-    
-    const getImages = async () => {
-        const newImages = await getGifs(category);
-        setImages(newImages);
-    }
-
-    useEffect(() => {
-        getImages();
-    }, []);
+   
+    const { images, isLoading} = useFetchGifs(category);
 
     return(
         <>
@@ -25,10 +17,8 @@ export const GifGrid = ({ category }) => {
                     key={image.id}
                     {...image}
                     
-                   />
-                    
+                   />  
                 ))
-                
                 }
             </div>
         </>
