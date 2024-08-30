@@ -1,4 +1,3 @@
-
 import { GifItem } from "./GifItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 // agregand cada componente gifGrid
@@ -15,7 +14,6 @@ export const GifGrid = ({ category }) => {
                    <GifItem 
                     key={image.id}
                     {...image}
-                    
                    />  
                 ))
                 }
